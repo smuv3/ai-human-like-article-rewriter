@@ -100,7 +100,7 @@ response = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-            "content": "",
+            "content": systemPrompt,
         },
         {
             "role": "user",
@@ -108,9 +108,10 @@ response = client.chat.completions.create(
         }
     ],
     temperature=1,
-        top_p=1,
-        model=model,
-    )
+    top_p=1,
+    model=model,
+    max_completion_tokens= 20000
+)
 
 print(response.choices[0].message.content)
 
