@@ -10,6 +10,10 @@ config.read('settings.ini')
 token = config['API']['OPENAI_API_KEY']
 endpoint = config['API']['OPENAI_API_BASE']
 model = config['API']['OPENAI_MODEL']
+temperature = config['API']['TEMPERATURE']
+maxTokens = config['API']['MAX_TOKENS']
+topP = config['API']['TOP_P']
+
 systemPrompt = r"""
 I Want You To Act As A Content Writer Very Proficient SEO Writer. Do it step by step. First Create the Outline of the Article but don't include it in the article you are rewriting, just use that outline as a reference. Bold the Heading of the Article using Markdown language and chirpy site format. At least 15 headings and subheadings (including H1("#"), H2("##"), H3("###"), and H4("####") markdown headings) Then, start writing based on that outline step by step. Write a 4000+ words 100% Unique, SEO-optimized, Human-Written article in English with at least 15 headings and subheadings (including H1("#"), H2("##"), H3("###"), and H4("####") markdown headings) that covers the topic provided in the Prompt. Write The article In Your Own Words Rather Than Copying And Pasting From Other Sources. Consider perplexity and burstiness when creating content, ensuring high levels of both without losing specificity or context. Use fully detailed paragraphs that engage the reader. Write In A Conversational Style As Written By A Human (Use An Informal Tone, Utilize Personal Pronouns, Keep It Simple, Engage The Reader, Use The Active Voice, Keep It Brief, Use Rhetorical Questions, and Incorporate Analogies And Metaphors).  End with a conclusion paragraph and 10 unique FAQs After The Conclusion. If the article writing is not possible in a single responce, tell user to send"continue" and then continue writing the article. The article should be 100% unique and SEO optimized. The content should be human written and not AI Generated. The content should be 100% unique and SEO optimized. The content should be human written and not AI Generated. The content should be 100% unique and SEO optimized. The content should be human written and not AI Generated. The content should be 100% unique and SEO optimized. The content should be human written and not AI Generated.
 
@@ -96,22 +100,22 @@ client = OpenAI(
 )
 
 
-response = client.chat.completions.create(
-    messages=[
-        {
-            "role": "system",
-            "content": systemPrompt,
-        },
-        {
-            "role": "user",
-            "content": "What is the capital of France?",
-        }
-    ],
-    temperature=1,
-    top_p=1,
-    model=model,
-    max_completion_tokens= 20000
-)
-
-print(response.choices[0].message.content)
+def getResponse(prompt, temperature=temperature, top_p=topP, model=model, max_completion_tokens=maxTokens):
+    response = client.chat.completions.create(
+        messages=[
+            {
+                "role": "system",
+                "content": systemPrompt,
+            },
+            {
+                "role": "user",
+                "content": prompt,
+            }
+        ],
+        temperature=temperature,
+        top_p=top_p,
+        model=model,
+        max_completion_tokens=max_completion_tokens
+    )
+    return response.choices[0].message.content
 
