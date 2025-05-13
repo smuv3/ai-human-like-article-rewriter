@@ -140,3 +140,6 @@ Thumbs.db
 *.rej
 *.sublime-workspace
 *.sublime-project
+
+# settings
+settings.ini
