@@ -118,6 +118,14 @@ def getResponse(prompt, temperature=temperature, top_p=topP, model=model, max_co
     )
     return response.choices[0].message.content
 
+def clean_md_code_block(content):
+    lines = content.splitlines()
+    if lines and lines[0].strip() == '```markdown':
+        lines.pop(0)  # Remove the first line
+    if lines and lines[-1].strip() == '```':
+        lines.pop()  # Remove the last line
+    return '\n'.join(lines)
+
 # Define input and output folders
 input_folder = 'data'
 output_folder = 'output'
@@ -150,6 +158,9 @@ with open(input_file_path, 'r', encoding='utf-8') as file:
 
 # Process the content using getResponse
 output_text = getResponse(prompt)
+
+# Clean the output text
+output_text = clean_md_code_block(output_text)
 
 # Save the output to the output folder with .md extension
 output_file_name = os.path.splitext(selected_file)[0] + '.md'
