@@ -10,9 +10,9 @@ config.read('settings.ini')
 token = config['API']['OPENAI_API_KEY']
 endpoint = config['API']['OPENAI_API_BASE']
 model = config['API']['OPENAI_MODEL']
-temperature = config['API']['TEMPERATURE']
-maxTokens = config['API']['MAX_TOKENS']
-topP = config['API']['TOP_P']
+temperature = float(config['API']['TEMPERATURE'])
+maxTokens = int(config['API']['MAX_TOKENS'])
+topP = float(config['API']['TOP_P'])
 
 systemPrompt = r"""
 I Want You To Act As A Content Writer Very Proficient SEO Writer. Do it step by step. First Create the Outline of the Article but don't include it in the article you are rewriting, just use that outline as a reference. Bold the Heading of the Article using Markdown language and chirpy site format. At least 15 headings and subheadings (including H1("#"), H2("##"), H3("###"), and H4("####") markdown headings) Then, start writing based on that outline step by step. Write a 4000+ words 100% Unique, SEO-optimized, Human-Written article in English with at least 15 headings and subheadings (including H1("#"), H2("##"), H3("###"), and H4("####") markdown headings) that covers the topic provided in the Prompt. Write The article In Your Own Words Rather Than Copying And Pasting From Other Sources. Consider perplexity and burstiness when creating content, ensuring high levels of both without losing specificity or context. Use fully detailed paragraphs that engage the reader. Write In A Conversational Style As Written By A Human (Use An Informal Tone, Utilize Personal Pronouns, Keep It Simple, Engage The Reader, Use The Active Voice, Keep It Brief, Use Rhetorical Questions, and Incorporate Analogies And Metaphors).  End with a conclusion paragraph and 10 unique FAQs After The Conclusion. If the article writing is not possible in a single responce, tell user to send"continue" and then continue writing the article. The article should be 100% unique and SEO optimized. The content should be human written and not AI Generated. The content should be 100% unique and SEO optimized. The content should be human written and not AI Generated. The content should be 100% unique and SEO optimized. The content should be human written and not AI Generated. The content should be 100% unique and SEO optimized. The content should be human written and not AI Generated.
@@ -99,7 +99,6 @@ client = OpenAI(
     api_key=token,
 )
 
-
 def getResponse(prompt, temperature=temperature, top_p=topP, model=model, max_completion_tokens=maxTokens):
     response = client.chat.completions.create(
         messages=[
@@ -118,4 +117,46 @@ def getResponse(prompt, temperature=temperature, top_p=topP, model=model, max_co
         max_completion_tokens=max_completion_tokens
     )
     return response.choices[0].message.content
+
+# Define input and output folders
+input_folder = 'data'
+output_folder = 'output'
+
+# List files in the input folder
+input_files = os.listdir(input_folder)
+if not input_files:
+    print("No files found in the input folder.")
+    exit()
+
+print("Select a file to process:")
+for idx, file_name in enumerate(input_files):
+    print(f"{idx + 1}: {file_name}")
+
+# Get user selection
+try:
+    file_index = int(input("Enter the number corresponding to the file: ")) - 1
+    if file_index < 0 or file_index >= len(input_files):
+        raise ValueError("Invalid selection.")
+except ValueError as e:
+    print("Invalid input. Please enter a valid number.")
+    exit()
+
+selected_file = input_files[file_index]
+input_file_path = os.path.join(input_folder, selected_file)
+
+# Read the content of the selected file
+with open(input_file_path, 'r', encoding='utf-8') as file:
+    prompt = file.read()
+
+# Process the content using getResponse
+output_text = getResponse(prompt)
+
+# Save the output to the output folder with .md extension
+output_file_name = os.path.splitext(selected_file)[0] + '.md'
+output_file_path = os.path.join(output_folder, output_file_name)
+
+with open(output_file_path, 'w', encoding='utf-8') as file:
+    file.write(output_text)
+
+print(f"Output saved to {output_file_path}")
 
