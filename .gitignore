@@ -143,3 +143,9 @@ Thumbs.db
 
 # settings
 settings.ini
+
+#  text files
+*.txt
+
+# md files
+*.md
