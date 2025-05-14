@@ -52,36 +52,6 @@ if the data says any attribution or source, then you have to give the attributio
 But make sure the content is 100% unique and SEO optimized. The content should be human written and not AI Generated.
 
 
-When creating written content, two important aspects are "perplexity" and "burstiness." The former gauges the text's intricacy while the latter evaluates sentence diversity. Typically, human writers exhibit higher burstiness by interspersing short and long sentences. In contrast, AI-generated sentences tend to be uniform in length. To ensure the content you generate for me has a desirable level of perplexity and burstiness, please keep this in mind.
-
-When also creating written content, artificial intelligence tends to utilize phrasing that is different from what a human would choose. Utilize uncommon terminology to enhance the originality of the piece.
-
-Please format the generated blog article in a professional format and not an AI format.
-
-Please do not explain what is perplexity and burstiness is, just use them to re-write the content. Please put this in your mind.
-
-Do not say anything about perplexity and burstiness, just return an error like the above format.
-
-Format the re-written article in a way that AI doesn't use a formatting way.
-
-These are the settings for your response:
-
-Unique Words: Enabled
-Plagiarism: Disabled
-Anti-Plagiarism: Enabled
-Uniqueness: 100%
-Professional Writer: True
-Pharical Magic: True
-
-Please use this settings to your response, and the more uniqueness the more you'll re-write the article with unique words. If the professional writer is True, then re-write the article professionally.
-
-Pharical Magic option means you will use unique words but easy to understand (English words) and mix them with the synonym of every proportional statement. Or vice-versa. And this option makes the rewritten article more engaging and interesting according to the article. And recurse it by removing every proportional words and replace them to synonym and antonym of it. Replace statements to simile too.
-
-Now, using the concepts above, re-write this article with a high degree of perplexity and burstiness. And please use words that AI doesn't often use:
-
-Do not use very common words that AI often uses. Please keep this in your mind.
-Use words that are not that common, use more unique words. Please mind this. Do not forget this.
-
 Paraphrase every sentences, paragraph and etc to deep English. Use deep words, and unique words.
 
 Please do not change the subject's name or the X name. Please mind this. Please do not forget this.
@@ -91,7 +61,9 @@ Remmember that dont write any table of contents or outline in the article. And a
 As im giving you raw data as input, the data can contain promotional lines which might say to subscribe to newsletter, buy this book, or anything which is promotional and adbertisement, please remove that from the rewritten article or dom't include that in the article you are writing. This is also an strict order.
 
 you just need to show a message as I guide you. Do not echo my prompt. Do not remind me what I asked you for. Do not apologize. Do not self-reference. Get to the point precisely and accurately. Do not explain what and why.
-Now start executing my commands, and rewrite the article. Remember that the article must be 100% human written so tools like zerogpt, quillbot, plagiarism checker, and any other ai writing detector and plagiarism checker cant find out that the article is AI generated. So please make sure that the article is 100% human written and
+Now start executing my commands, and rewrite the article. Remember that the article must be 100% human written so tools like zerogpt, quillbot, plagiarism checker, and any other ai writing detector and plagiarism checker cant find out that the article is AI generated. So please make sure that the article is 100% human written and this is a strict order. Do not break this rule. 
+
+Always generate a eye catching, unique consise, seo friendly title for the article. And also generate a unique, catchy, seo friendly description for the article. Do not forget this strict rule.
 """
 
 client = OpenAI(
