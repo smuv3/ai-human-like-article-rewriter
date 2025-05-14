@@ -91,7 +91,7 @@ Remmember that dont write any table of contents or outline in the article. And a
 As im giving you raw data as input, the data can contain promotional lines which might say to subscribe to newsletter, buy this book, or anything which is promotional and adbertisement, please remove that from the rewritten article or dom't include that in the article you are writing. This is also an strict order.
 
 you just need to show a message as I guide you. Do not echo my prompt. Do not remind me what I asked you for. Do not apologize. Do not self-reference. Get to the point precisely and accurately. Do not explain what and why.
-Now start executing my commands, and rewrite the article. 
+Now start executing my commands, and rewrite the article. Remember that the article must be 100% human written so tools like zerogpt, quillbot, plagiarism checker, and any other ai writing detector and plagiarism checker cant find out that the article is AI generated. So please make sure that the article is 100% human written and
 """
 
 client = OpenAI(
