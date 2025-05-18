@@ -3,7 +3,8 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/releases"><img src="https://img.shields.io/github/v/release/OCEANOFANYTHING/ai-human-like-article-rewriter?style=flat-square" alt="Release"></a>
+  <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/releases"><img src="https://img.shields.io/github/v/release/OCEANOFANYTHING/ai-human-like-article-rewriter
+  " alt="Release"></a>
   <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/blob/main/LICENSE"><img src="https://img.shields.io/github/license/OCEANOFANYTHING/ai-human-like-article-rewriter?style=flat-square" alt="License"></a>
   <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/stargazers"><img src="https://img.shields.io/github/stars/OCEANOFANYTHING/ai-human-like-article-rewriter?style=flat-square" alt="Stars"></a>
   <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/issues"><img src="https://img.shields.io/github/issues/OCEANOFANYTHING/ai-human-like-article-rewriter?style=flat-square" alt="Issues"></a>
