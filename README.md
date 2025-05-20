@@ -125,3 +125,4 @@ For questions, suggestions, or support:
 
 - GitHub Issues: [https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/issues](https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/issues)
 - Email: [oceanofanything@gmail.com](mailto:work.oceanofanything@gmail.com)
+- Article on This Tool: [AI Article Rewriter That Writes Like a Human in 2025](https://scriptxeno.github.io/posts/ai-article-rewriter-that-writes-like-a-pro-in-2025/)
